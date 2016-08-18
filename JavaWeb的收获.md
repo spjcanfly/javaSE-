@@ -3,6 +3,8 @@
 如果不行，就进入cmd 然后进入放tomcat的bin目录，然后手动运行
 startup.bat 就行了；如果还不行 就输入 catalina run这个命令（意思是即使有错误，它也会运行然后找出错误在哪）
 
+tomcat服务器不能在含有中文路径下，如果在本地配置服务器，那么需要的数据放在的路径为E:\apache-tomcat-6.0.44\webapps\ROOT。
+访问tomcat的话，在浏览器输入地址本地ip，或者http://localhost:8080（这个是tomcat网站） 记得一定要打开服务器。
 ----------
 
 # 2.如何在cmd中不切换到d盘的目录中，使用命令运行TomCat服务器 #
