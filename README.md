@@ -1,5 +1,20 @@
 # javaSE-
 java基础知识
+
+##配置java环境
+
+    安装jdk，然后进入高级系统设置，环境变量，
+
+     1.变量名JAVA_HOME
+
+     变量值为C:\Java\jdk1.7.0_15
+
+     2.修改Path，将JDK的bin目录添加到PATH目录下。
+
+     %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;  
+
+打开cmd命令窗口，执行Javac，弹出一系列命令，这就成功了
+
 # 1.有关局部变量 #
 局部变量中不能用任何的访问修饰符修饰，也不能用static修饰，只能用final修饰
 
