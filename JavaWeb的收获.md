@@ -48,7 +48,5 @@ tomcat服务器不能在含有中文路径下，如果在本地配置服务器�
 基本上都是点击build path，configure bulid path ，add library，添加需要的环境，java的环境是jre runtime，servelet的环境是 server runtime，还有tomcat运行环境版本是否一致的问题，点击进入properties，找到Project Facets，右边有个Runtimes，进去修改版本号
 
 # 9.关于jar包 #
-
 ----------
-
 jar包就是别人已经写好的一些类，然后将这些类进行打包，你可以将这些jar包引入你的项目中，然后就可以直接使用这些jar包中的类和属性了，这些jar包一般都会放在lib目录下的.
