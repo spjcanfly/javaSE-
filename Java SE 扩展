@@ -16,3 +16,10 @@
       相应的工厂类就需要重新编译一遍。
       
 2.当一个方法被调用而且参数为两个以上，当使用其中一个参数时，最好判空处理，因为如果空指针，系统不会提示的很明确，找起来费劲
+
+      private void switchFragment(Fragment fromFragment, Fragment toFragment) {}, 
+                 //这是一个坑
+                if (fromFragment != null) {
+                    //隐藏之前的fragment
+                    transaction.hide(fromFragment);
+                }
