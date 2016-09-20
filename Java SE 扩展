@@ -26,7 +26,8 @@
 
 3.单例模式之饿汉式和懒汉式
 
-   懒汉式： 懒汉式如果在创建实例对象时不加上synchronized则会导致对对象的访问不是线程安全的，加上synchronized之后效率会下降                         
+   懒汉式： 懒汉式如果在创建实例对象时不加上synchronized则会导致(在多线程中)对对象的访问不是线程安全的(不是同一个对象)，
+   加上synchronized之后能保证多线程时对象是同一个,但是效率会下降                         
    public class SingleDemo {                                               
   private static SingleDemo s = null;  
     private SingleDemo(){}  
