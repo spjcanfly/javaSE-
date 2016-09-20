@@ -23,3 +23,21 @@
                     //隐藏之前的fragment
                     transaction.hide(fromFragment);
                 }
+
+3.单例模式之饿汉式和懒汉式
+
+   懒汉式： 懒汉式如果在创建实例对象时不加上synchronized则会导致对对象的访问不是线程安全的，加上synchronized之后效率会下降                         
+   public class SingleDemo {                                               
+  private static SingleDemo s = null;  
+    private SingleDemo(){}  
+    public static synchronized  SingleDemo getInstance(){  
+      s==null?new SingleDemo：s;
+    } 
+    
+   饿汉式： 饿汉式是线程安全,在类创建的同时就已经创建好一个静态的对象供系统使用,以后不在改变（推荐）
+   public class Singleton{ 
+   public Singleton(){}
+   private static Singleton singleton = new Singleton()；  //建立对象
+     public static Singleton getInstance(){
+     return singleton ；//直接返回单例对象    
+     }
