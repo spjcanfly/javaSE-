@@ -42,3 +42,5 @@
      public static Singleton getInstance(){
      return singleton ；//直接返回单例对象    
      }
+
+4.SimpleDateFormat 允许以为日期-时间格式化选择任何用户指定的方式启动。输出想要的时间格式类型
